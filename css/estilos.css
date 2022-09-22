@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/*! ESTILOS GENERALES Y UNIVERSALES */
+
+/* -- clases para etiquetas -- */
+
+a{
+    text-decoration: none;
+    font-family: "Adamina-Regular.ttf";
+    color: #576F72;
+}
+
+body{
+    background-color: #F2EEE5;
+    width: 100%;
+}
+
+div{
+    margin: 10px;
+}
+
+li{
+    list-style-type: none;
+    text-align: center;
+}
+
+/* -- clases para lineas en particular --  */
+
+.imgCentered{
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.txtcentrado{
+    text-align: center;
+    margin-top: 18px;
+    font-family: "Adamina-Regular.ttf";
+}
+
+/*! ESTILOS PARA BLOQUES GENERALES */
+
+/* estilos header */
+
+.header__menu ul{
+    display: flex;
+    justify-content: end;
+    padding: 0.5rem 4rem 0.5rem 0.5rem;
+    font-size: 18px;
+    color: #486261;
+}
+.header__menu li{
+    display: inline-block;
+    justify-content: space-between;
+    line-height: 80px;
+    margin: 0 5px;
+    padding: 7px 13px;
+}
+
+/* estilos footer */
+.footer section, .footer h4, .footer h5{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+    font-family: "Adamina-Regular.ttf";
+    color: #546157;
+}
+.footer img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.footer img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+/*! ESTILOS INDEX */
+
+.hero img{
+    position: relative;
+    width: 110%;
+    height: 10%;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+    transform: scale(1.014, 1);
+}
+
+.hero img:hover{
+    transform: scale(1.014, 1.014);
+    filter: drop-shadow(0 0 0.60rem #bbb4a9);
+    transition: all .5s;
+}
+
+/* Galería de imágenes */
+
+.gallery{
+    --gap: 16px;
+    --n-col: 4;
+    --row-height:300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--n-col), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery img:hover{
+    transform: scale(1.011, 1.011);
+    filter: drop-shadow(0 0 0.50rem #E4DCCF);
+    transition: all .1s;
+}
+
+/*! ESTILOS CATEGORIAS*/
+
+.categ__txtTitulo{
+    font-size: 30px;
+    font-weight: light;
+    font-family: 'Aboreto', cursive;
+    text-decoration: overline;
+    text-align: center;
+    color: #6D8B74;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.categ__img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.categ__img img{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+
+/*! ESTILOS TIENDA */
+
+.colorbox{
+    background-color: #E4DCCF;
+    padding: 15px;
+    text-align: center;
+    height: auto;
+}
+
+.tienda__txt1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.tienda__txt2{
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.tienda__txt3{
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.columna{
+    width: 85%;
+    height: 70%;
+    display: flex;
+    justify-items: center;
+    margin: 10px auto 10px auto; 
+}
+
+/*! ESTILOS "NOSOTROS" */
+
+.contenedor{
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: var(--gap);
+
+
+    grid-template-areas:
+    "quienes-somos foto"
+    "historia foto";
+}
+
+.quienes{
+    grid-area: quienes-somos;
+    justify-items: center;
+}
+.quienes h4{margin-bottom: 15px;}
+.hist{
+    grid-area: historia;
+    justify-items: center;
+}
+.hist h4{margin-bottom: 15px;}
+
+.foto-lib{
+    grid-area: foto;
+    /* Apliqué las propiedades vistas en clases e intenté investigar por mi cuenta, para que ocupe el resto del espacio del contenedor, pero todavia no funciona como debería, no sé por qué*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*! ESTILOS CONTACTO */
+
+form{
+    margin: auto;
+    width: 400px;
+    padding: 1rem;
+    color-scheme: #576F72;
+    border-radius: 1rem;
+}
+
+
+.form-style h3{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.form-style legend{
+    font-size: 17px;
+}
+
+.form-style label{
+    font-size: 15px;
+}
+
+input{
+    border-spacing: 2px;
+    font-family: 'Inconsolata', monospace;
+}
+
+textarea{
+    vertical-align: top;
+    font-family: 'Inconsolata', monospace;
+}
+
+/* ! RESPONSIVE */
+/* TABLET */
+@media  screen and (max-width: 768px) {
+
+    .header__menu ul{
+        display: block;        
+    } 
+    .header__menu li{
+        display: list-item;
+        line-height: 20px;
+    }
+    .categ__menu ul{
+        font-size: 15px;
+    }
+    .gallery{
+        --n-col: 2;
+        --row-height: 300px;
+    }
+    .categ__txtTitulo{
+        font-size: 25px;
+    }
+    .categ__img{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .categ__img img{
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap ;
+    }    
+    .foto-lib{
+        display: flex;
+        justify-items: center;
+    }
+    .colorbox{
+        padding: 8px;
+    }
+    .tienda__txt1{
+        font-size: 17px;
+    }
+    .tienda__txt2{
+        font-size: 13px;
+    }
+    .tienda__txt3{
+        font-size: 13px;
+    }
+}
+/* MOBILE */
+@media  screen and (max-width: 500px) {
+    .header__title{
+        font-size: 20px;
+    }
+    .header__menu li{
+        font-size: 14px;
+    }
+    .footer{
+        font-size: 8px;
+    }
+    .header__title{
+        font-size: 16px;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .gallery img{
+        width: 200px;
+        height: 200px;
+    }
+    form{
+        width: 300px;
+        padding: 0.2rem;
+    }
+    .form-style h3{
+        font-size: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .form-style legend{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery{
+        --n-col: 3;
+    }
+}
+
+
+
+
