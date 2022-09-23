@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid justify-content-start ms-3">
                 <a class="navbar-brand" href="index.html"><img src="images/logo-header.png" alt="Logo"></a>
-                <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -32,6 +32,29 @@
             </div>
         </nav>
     </header>
+
+    <section>
+        <button type="button" class="btn btn-primary d-flex p-2 ms-auto me-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <p class="justify-content-center">Bienvenidx</p>
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¡Hola!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Gracias por pasar a ver :)</h2>
+                        <p>Ojalá tengas un lindo día (¡y te den ganas de venir a visitarnos!)</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <main>
         <div id="carouselExampleFade" class="carousel slide carousel-fade hero" data-bs-ride="carousel">
@@ -54,6 +77,11 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden"></span>
             </button>
+        </div>
+
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong><a class="" href="./paginas/tienda.html">¡Vení a visitarnos!</a></strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
 
         <div class="gallery">

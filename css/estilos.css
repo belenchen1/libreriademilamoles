@@ -101,6 +101,33 @@ li{
     transition: all .5s;
 }
 
+.btn{
+    font-family: "Adamina-Regular.ttf";
+    border-radius: 20%;
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #bbb4a9;
+    --bs-btn-border-color: #bbb4a9;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #546157;
+    --bs-btn-hover-border-color: #546157;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #bbb4a9;
+    --bs-btn-active-bg: #546157;
+    --bs-btn-active-border-color: #546157;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #bbb4a9;
+    --bs-btn-disabled-border-color: #bbb4a9;
+}
+
+.btn p{
+    margin: 1rem;
+}
+
 /* Galería de imágenes */
 
 .gallery{
@@ -160,20 +187,25 @@ li{
     height: auto;
 }
 
-.tienda__txt1{
+.txt1{
     font-size: 20px;
     font-weight: bold;
+    padding-bottom: 1rem;
 }
-.tienda__txt2{
+.txt2{
     font-size: 15px;
     font-weight: normal;
     text-decoration: underline;
 }
-.tienda__txt3{
+.txt3{
     font-size: 15px;
     font-weight: normal;
     padding-top: 10px;
     padding-bottom: 5px;
+}
+
+.green{
+    color: #486261;
 }
 
 .columna{
@@ -184,40 +216,14 @@ li{
     margin: 10px auto 10px auto; 
 }
 
-/*! ESTILOS "NOSOTROS" */
-
-.contenedor{
-    box-sizing: border-box;
-    padding: var(--gap);
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: var(--gap);
-
-
-    grid-template-areas:
-    "quienes-somos foto"
-    "historia foto";
+.frente{
+    width: 17rem;
+    height: 17rem;
 }
 
-.quienes{
-    grid-area: quienes-somos;
-    justify-items: center;
-}
-.quienes h4{margin-bottom: 15px;}
-.hist{
-    grid-area: historia;
-    justify-items: center;
-}
-.hist h4{margin-bottom: 15px;}
-
-.foto-lib{
-    grid-area: foto;
-    /* Apliqué las propiedades vistas en clases e intenté investigar por mi cuenta, para que ocupe el resto del espacio del contenedor, pero todavia no funciona como debería, no sé por qué*/
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.map{
+    height: 10rem;
+    width: auto;
 }
 
 /*! ESTILOS CONTACTO */
@@ -229,7 +235,6 @@ form{
     color-scheme: #576F72;
     border-radius: 1rem;
 }
-
 
 .form-style h3{
     padding-bottom: 20px;
@@ -304,6 +309,9 @@ textarea{
     }
     .tienda__txt3{
         font-size: 13px;
+    }
+    .btn{
+        size-adjust: 50%;
     }
 }
 /* MOBILE */
