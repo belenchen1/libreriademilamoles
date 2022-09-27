@@ -9,12 +9,17 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
+    <script> // Mostrar automáticamente la ventana emergente al cargar la página.
+        $( document ).ready(function() {
+            $('#mostrarmodal').modal('toggle')
+        });
+    </script>
 </head>
 <body>
-    <header>
+    <header id="arriba">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid justify-content-start ms-3">
-                <a class="navbar-brand" href="index.html"><img src="images/logo-header.png" alt="Logo"></a>
+                <a class="navbar-brand img-fluid" href="index.html"><img src="images/logo-header.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,8 +37,7 @@
             </div>
         </nav>
     </header>
-
-    <section>
+    <section> <!-- Ventana emergente con Modal -->
         <button type="button" class="btn btn-primary d-flex p-2 ms-auto me-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <p class="justify-content-center">Bienvenidx</p>
         </button>
@@ -55,35 +59,32 @@
             </div>
         </div>
     </section>
-
-    <main>
+    <section class="container-fluid w-100"> 
         <div id="carouselExampleFade" class="carousel slide carousel-fade hero" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <a href="paginas/categorias.html"><img src="images/hero1.jpg" class="d-block w-100" alt="Imagen de marcadores para lettering"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="paginas/categorias.html"><img src="images/hero2.jpg" class="d-block w-100" alt="Imagen de marcadores para lettering"></a>
+                    <a href="paginas/categorias.html"><img src="images/hero2.jpg" class="d-block w-100" alt="Imagen de pinturas"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="paginas/categorias.html"><img src="images/hero3.jpg" class="d-block w-100" alt="Imagen de marcadores para lettering"></a>
+                    <a href="paginas/categorias.html"><img src="images/hero3.jpg" class="d-block w-100" alt="Imagen de bullet journals"></a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <button class="carousel-control-prev p-0 m-0" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <button class="carousel-control-next p-0 m-0" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden"></span>
             </button>
         </div>
+    </section>
+    
 
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong><a class="" href="./paginas/tienda.html">¡Vení a visitarnos!</a></strong>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-
+    <main>
         <div class="gallery">
             <a href="paginas/categorias.html"><img class="img-rounded" src="images/productos/mochilas.jpg" alt="Imagen de mochila"></a>
             <a href="paginas/categorias.html"><img class="" src="images/productos/agendas.jpg" alt="Imagen de agendas"></a>
@@ -94,7 +95,6 @@
             <a href="paginas/categorias.html"><img class="" src="images/productos/lettering.jpg" alt="Imagen de marcadores punta pincel"></a>
             <a href="paginas/categorias.html"><img src="images/productos/cuadernillos.jpg" alt="Imagen de cuadernillo"></a>
         </div>
-
     </main>
 
     <footer class="footer">

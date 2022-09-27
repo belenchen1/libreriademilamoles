@@ -217,14 +217,12 @@ li{
 }
 
 .frente{
-    width: 17rem;
-    height: 17rem;
+    width: 60%;
+    height: 60%;
 }
 
-.map{
-    height: 10rem;
-    width: auto;
-}
+/*! ESTILOS NOSOTROS */
+
 
 /*! ESTILOS CONTACTO */
 
@@ -293,11 +291,7 @@ textarea{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap ;
-    }    
-    .foto-lib{
-        display: flex;
-        justify-items: center;
-    }
+    } 
     .colorbox{
         padding: 8px;
     }
@@ -350,11 +344,17 @@ textarea{
     .form-style legend{
         font-size: 13px;
     }
+    .hist p{
+        font-size: 10px;    
+    }
 }
 
 @media screen and (max-width: 1000px) {
     .gallery{
         --n-col: 3;
+    }
+    .hist{
+        font-size: 10px;
     }
 }
 
