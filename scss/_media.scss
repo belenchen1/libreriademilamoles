@@ -5,10 +5,6 @@
     .categ__menu ul{
         font-size: 15px;
     }
-    .gallery{
-        --n-col: 2;
-        --row-height: 300px;
-    }
     .categ__txtTitulo{
         font-size: 25px;
     }
@@ -16,11 +12,11 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-    }
-    .categ__img img{
-        width: 200px;
-        height: 200px;
-        margin: 10px;
+        img{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
     }
     .contenedor{
         display: flex;
@@ -30,13 +26,13 @@
     .colorbox{
         padding: 8px;
     }
-    .tienda__txt1{
+    .txt1{
         font-size: 17px;
     }
-    .tienda__txt2{
+    .txt2{
         font-size: 13px;
     }
-    .tienda__txt3{
+    .txt3{
         font-size: 13px;
     }
     .btn{
@@ -46,45 +42,31 @@
 /* MOBILE */
 @media  screen and (max-width: 500px) {
     .header__title{
-        font-size: 20px;
+        font-size: 17px;
     }
     .footer{
         font-size: 8px;
-    }
-    .header__title{
-        font-size: 16px;
-    }
-    .gallery{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .gallery img{
-        width: 200px;
-        height: 200px;
     }
     form{
         width: 300px;
         padding: 0.2rem;
     }
-    .form-style h3{
-        font-size: 15px;
-        padding-bottom: 15px;
-        text-align: center;
-    }
-    .form-style legend{
-        font-size: 13px;
-    }
+    .form-style{
+        h3{
+            font-size: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        legend{
+            font-size: 13px;
+        }
+    } 
     .hist p{
         font-size: 10px;    
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .gallery{
-        --n-col: 3;
-    }
     .hist{
         font-size: 10px;
     }

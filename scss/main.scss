@@ -14,7 +14,7 @@
 
 a{
     text-decoration: none;
-    font-family: "Adamina-Regular.ttf";
+    font-family: $mainFont;
     color: $darkgreen;
 }
 
@@ -45,7 +45,7 @@ li{
 .txtcentrado{
     text-align: center;
     margin-top: 18px;
-    font-family: "Adamina-Regular.ttf";
+    font-family: $mainFont;
 }
 
 /*! ESTILOS PARA BLOQUES GENERALES */
@@ -59,22 +59,19 @@ li{
 .footer{
     section, h4, h5{
         font-size: 14px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flex-row-center;
         margin-bottom: 1%;
-        font-family: "Adamina-Regular.ttf";
+        font-family: $mainFont;
         color: $maingreen;
     }
     img{
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        @include sizes(40px, 40px);
+        &:hover{
+            transform: scale(1.05, 1.05);
+        }
     }
-    &:hover{
-        transform: scale(1.05, 1.05);
-    }
+    
 }
 
 .navbar{
@@ -99,11 +96,9 @@ li{
 .hero{
     img{
     position: relative;
-    width: 110%;
-    height: 10%;
     margin-top: 1.5%;
     margin-bottom: 3%;
-    transform: scale(1.014, 1);
+    transform: scale(1.1, 1);
     &:hover{
         transform: scale(1.014, 1.014);
         filter: drop-shadow(0 0 0.60rem $mainbeige);
@@ -113,7 +108,7 @@ li{
 }
 
 .btn{
-    font-family: "Adamina-Regular.ttf";
+    font-family: $mainFont;
     border-radius: 20%;
     margin-top: 1rem;
     p{
@@ -121,14 +116,21 @@ li{
     }
 }
 
-.btn-primary {
-    --bs-btn-bg: $mainbeige;
-    --bs-btn-border-color: $mainbeige;
-    --bs-btn-hover-bg: $maingreen;
-    --bs-btn-hover-border-color: $maingreen;
-    --bs-btn-active-bg: $maingreen;
-    --bs-btn-disabled-bg: $mainbeige;
-    --bs-btn-disabled-border-color: $mainbeige;
+.btn-primary { // ? NO SÉ POR QUÉ NO ME FUNCIONAN ESTAS VARIABLES
+    // --bs-btn-bg: $mainbeige;
+    // --bs-btn-border-color: $mainbeige;
+    // --bs-btn-hover-bg: $maingreen;
+    // --bs-btn-hover-border-color: $maingreen;
+    // --bs-btn-active-bg: $maingreen;
+    // --bs-btn-disabled-bg: $mainbeige;
+    // --bs-btn-disabled-border-color: $mainbeige;
+    --bs-btn-bg: #bbb4a9;
+    --bs-btn-border-color: #bbb4a9;
+    --bs-btn-hover-bg: #546157;
+    --bs-btn-hover-border-color: #546157;
+    --bs-btn-active-bg: #546157;
+    --bs-btn-disabled-bg: #bbb4a9;
+    --bs-btn-disabled-border-color: #bbb4a9;
 }
 
 /* CARDS */
@@ -168,12 +170,10 @@ li{
     margin-bottom: 50px;
 }
 .categ__img{
-    display: flex;
-    flex-flow: row wrap;
+    @include flex(flex, row, wrap);
     justify-content: space-around;
     img{
-        width: 250px;
-        height: 250px;
+        @include sizes(250px, 250px);
         margin: 10px;
     }
 }
@@ -208,19 +208,9 @@ li{
     color: $darkergreen;
 }
 
-.columna{
-    width: 85%;
-    height: 70%;
-    display: flex;
-    justify-items: center;
-    margin: 10px auto 10px auto; 
-}
-
 .frente{
-    width: 60%;
-    height: 60%;
+    @include sizes(60%, 60%);
 }
-
 
 /*! ESTILOS CONTACTO */
 
