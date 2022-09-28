@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="images/logo-f.png">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/main.css">
     <script> // Mostrar automáticamente la ventana emergente al cargar la página.
         $( document ).ready(function() {
             $('#mostrarmodal').modal('toggle')
@@ -19,24 +19,27 @@
     <header id="arriba">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid justify-content-start ms-3">
-                <a class="navbar-brand img-fluid" href="index.html"><img src="images/logo-header.png" alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse header__menu" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <li><a class="nav-link active" aria-current="page" href="#">INICIO</a></li>
-                        <li><a class="nav-link" href="paginas/categorias.html">CATEGORÍAS</a></li>
-                        <li><a class="nav-link" href="paginas/tienda.html">TIENDA</a></li>
-                        <li><a class="nav-link" href="paginas/contacto.html">CONTACTO</a></li>
-                        <li><a class="nav-link" href="paginas/nosotros.html">NOSOTROS</a></li>
-                    </li>
-                </ul>
+                <div class="row">
+                    <a class="navbar-brand" href="index.html"><img class="col-3" src="images/logo-header.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse header__menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <li><a class="nav-link active" aria-current="page" href="#">INICIO</a></li>
+                            <li><a class="nav-link" href="paginas/categorias.html">CATEGORÍAS</a></li>
+                            <li><a class="nav-link" href="paginas/tienda.html">TIENDA</a></li>
+                            <li><a class="nav-link" href="paginas/contacto.html">CONTACTO</a></li>
+                            <li><a class="nav-link" href="paginas/nosotros.html">NOSOTROS</a></li>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+
     <section> <!-- Ventana emergente con Modal -->
         <button type="button" class="btn btn-primary d-flex p-2 ms-auto me-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <p class="justify-content-center">Bienvenidx</p>
@@ -85,7 +88,60 @@
     
 
     <main>
-        <div class="gallery">
+        <div class="container-fluid">
+            <div class="row justify-content-around ">
+                <div class="card" style="width: 15rem;">
+                    <a href="paginas/categorias.html"><img src="images/productos/mochilas.jpg" class="card-img-top" alt="Imagen de mochila"></a>
+                    <div class="card-body">
+                            <a href="paginas/categorias.html"><h5 class="card-title">Mochilas</h5></a>
+                            <p>Mochilas de distintas distribuidoras, distintos colores, tamaños, diseños.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <a href="paginas/categorias.html"><img src="images/productos/agendas.jpg" class="card-img-top" alt="Imagen de cartuchera"></a>
+                    <div class="card-body">
+                        <a href="paginas/categorias.html"><h5 class="card-title">Agendas y journals</h5></a>
+                        <p>Agendas con planificador mensual o semanal, calendario, sobres, etcétera; bullet journals con papel punteado. Distintos colores y diseños.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <a href="paginas/categorias.html"><img src="images/productos/cartuchera.jpg" class="card-img-top" alt="Imagen de cartuchera"></a>
+                    <div class="card-body">
+                        <a href="paginas/categorias.html"><h5 class="card-title">Librería escolar</h5></a>
+                        <p>Cartucheras, lápices, lapiceras, cuadernillos, cuadernos, acrílicos, sacapuntas, borradores, entre otros.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <a href="paginas/categorias.html"><img src="images/productos/oficina.jpg" class="card-img-top" alt="Imagen de cartuchera"></a>
+                    <div class="card-body">
+                        <a href="paginas/categorias.html"><h5 class="card-title">Librería comercial</h5></a>
+                        <p>Abrochadoras, adhesivos, anotadores, biblioratos, bandas elásticas, cajas, calculadoras, entre otros.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <a href="paginas/categorias.html"><img src="images/productos/artistica/ar3.jpg" class="card-img-top" alt="Imagen de cartuchera"></a>
+                    <div class="card-body">
+                        <a href="paginas/categorias.html"><h5 class="card-title">Librería artística</h5></a>
+                        <p>Acuarelas, acrílicos, pinceles, blocks para dibujo y pintura, espátulas, entre otros.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <a href="paginas/categorias.html"><img src="images/productos/bebote.jpg" class="card-img-top" alt="Imagen de cartuchera"></a>
+                    <div class="card-body">
+                        <a href="paginas/categorias.html"><h5 class="card-title">Juguetería</h5></a>
+                        <p>Juegos de mesa, pelotas, peluches, disfraces, bebotes, autos de juguete, tractores, slime, pop it, entre otros.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <a href="paginas/categorias.html"><img src="images/productos/regaleria_bijouterie.jpeg" class="card-img-top" alt="Imagen de cartuchera"></a>
+                    <div class="card-body">
+                        <a href="paginas/categorias.html"><h5 class="card-title">Regalería</h5></a>
+                        <p>Electrodomésticos de cocina (pavas, minipimers, etcétera), bijouterie, cantimploras, perfumes de imitación, entre otros.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="gallery">
             <a href="paginas/categorias.html"><img class="img-rounded" src="images/productos/mochilas.jpg" alt="Imagen de mochila"></a>
             <a href="paginas/categorias.html"><img class="" src="images/productos/agendas.jpg" alt="Imagen de agendas"></a>
             <a href="paginas/categorias.html"><img class="" src="images/productos/cartuchera.jpg" alt="Imagen de cartuchera"></a>
@@ -94,7 +150,7 @@
             <a href="paginas/categorias.html"><img class="" src="images/productos/bebote.jpg" alt="Imagen de Bebé de juguete"></a>
             <a href="paginas/categorias.html"><img class="" src="images/productos/lettering.jpg" alt="Imagen de marcadores punta pincel"></a>
             <a href="paginas/categorias.html"><img src="images/productos/cuadernillos.jpg" alt="Imagen de cuadernillo"></a>
-        </div>
+        </div> -->
     </main>
 
     <footer class="footer">

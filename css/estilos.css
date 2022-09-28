@@ -46,24 +46,12 @@ li{
 
 /*! ESTILOS PARA BLOQUES GENERALES */
 
-/* estilos header */
-
 .header__menu ul{
     display: flex;
     justify-content: end;
     padding: 0.5rem 4rem 0.5rem 0.5rem;
-    font-size: 18px;
     color: #486261;
 }
-.header__menu li{
-    display: inline-block;
-    justify-content: space-between;
-    line-height: 80px;
-    margin: 0 5px;
-    padding: 7px 13px;
-}
-
-/* estilos footer */
 .footer section, .footer h4, .footer h5{
     font-size: 14px;
     display: flex;
@@ -82,6 +70,23 @@ li{
 
 .footer img:hover {
     transform: scale(1.05, 1.05);
+}
+
+.navbar{
+    --bs-navbar-brand-padding-y: 0rem;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color:#546157;
+    font-weight: bold;
+}
+.navbar-brand :hover{
+    transform: scale(1.009,1.009);
+}
+.navbar-nav :hover{
+    --bs-nav-link-hover-color: #95ada0;
+}
+.bg-light {
+    --bs-bg-opacity: 0.5;
 }
 
 /*! ESTILOS INDEX */
@@ -108,24 +113,43 @@ li{
 }
 
 .btn-primary {
-    --bs-btn-color: #fff;
     --bs-btn-bg: #bbb4a9;
     --bs-btn-border-color: #bbb4a9;
-    --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #546157;
     --bs-btn-hover-border-color: #546157;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #bbb4a9;
     --bs-btn-active-bg: #546157;
-    --bs-btn-active-border-color: #546157;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: #bbb4a9;
     --bs-btn-disabled-border-color: #bbb4a9;
 }
 
 .btn p{
     margin: 1rem;
+}
+
+/* CARDS */
+.card-body {
+    padding: 0px;
+    color: #546157;
+}
+.card{
+    --bs-card-bg: #FEFBF6;
+    text-align: center;
+    --bs-card-title-spacer-y: 0rem;
+}
+.card img{
+    margin-top: 0.5rem;
+}
+
+.card p{
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.card a :hover{
+    transform: scale(1.007, 1.007);
+    filter: drop-shadow(0 0 0.30rem #E4DCCF);
+    transition: all .1s;
+    color: #546157;
 }
 
 /* Galería de imágenes */
@@ -260,13 +284,6 @@ textarea{
 /* TABLET */
 @media  screen and (max-width: 768px) {
 
-    .header__menu ul{
-        display: block;        
-    } 
-    .header__menu li{
-        display: list-item;
-        line-height: 20px;
-    }
     .categ__menu ul{
         font-size: 15px;
     }
@@ -312,9 +329,6 @@ textarea{
 @media  screen and (max-width: 500px) {
     .header__title{
         font-size: 20px;
-    }
-    .header__menu li{
-        font-size: 14px;
     }
     .footer{
         font-size: 8px;
