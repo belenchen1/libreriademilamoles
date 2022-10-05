@@ -57,6 +57,7 @@ li{
     color: $darkergreen;
 }
 .footer{
+    background-color: #F5F4EF;
     section, h4, h5{
         font-size: 14px;
         @include flex-row-center;
@@ -71,7 +72,6 @@ li{
             transform: scale(1.05, 1.05);
         }
     }
-    
 }
 
 .navbar{
@@ -89,6 +89,17 @@ li{
 }
 .bg-light {
     --bs-bg-opacity: 0.5;
+}
+
+.navbar-toggler {
+    position: relative;
+    top: -3em;
+    left: -1em;
+    margin-bottom: -2em;
+    background-color: transparent;
+    border: transparent;
+    display: flex;
+    justify-content: end;
 }
 
 /*! ESTILOS INDEX */

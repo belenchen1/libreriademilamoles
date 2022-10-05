@@ -26,7 +26,12 @@
   .txt3 {
     font-size: 13px; }
   .btn {
-    size-adjust: 50%; } }
+    size-adjust: 50%; }
+  .navbar-toggler {
+    position: relative;
+    top: -3em;
+    left: 0em;
+    margin-bottom: -2em; } }
 
 /* MOBILE */
 @media screen and (max-width: 500px) {
@@ -93,22 +98,23 @@ li {
   padding: 0.5rem 4rem 0.5rem 0.5rem;
   color: #486261; }
 
-.footer section, .footer h4, .footer h5 {
-  font-size: 14px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 1%;
-  font-family: "Adamina-Regular.ttf";
-  color: #546157; }
-
-.footer img {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px; }
-  .footer img:hover {
-    transform: scale(1.05, 1.05); }
+.footer {
+  background-color: #F5F4EF; }
+  .footer section, .footer h4, .footer h5 {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1%;
+    font-family: "Adamina-Regular.ttf";
+    color: #546157; }
+  .footer img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; }
+    .footer img:hover {
+      transform: scale(1.05, 1.05); }
 
 .navbar {
   --bs-navbar-brand-padding-y: 0rem; }
@@ -125,6 +131,16 @@ li {
 
 .bg-light {
   --bs-bg-opacity: 0.5; }
+
+.navbar-toggler {
+  position: relative;
+  top: -3em;
+  left: -1em;
+  margin-bottom: -2em;
+  background-color: transparent;
+  border: transparent;
+  display: flex;
+  justify-content: end; }
 
 /*! ESTILOS INDEX */
 .hero img {

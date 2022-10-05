@@ -38,6 +38,13 @@
     .btn{
         size-adjust: 50%;
     }
+    // ! NO FUNCIONA
+    .navbar-toggler {
+        position: relative;
+        top: -3em;
+        left: 0em;
+        margin-bottom: -2em;
+    }
 }
 /* MOBILE */
 @media  screen and (max-width: 500px) {
