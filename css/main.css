@@ -1,22 +1,8 @@
 /* ! RESPONSIVE */
 /* TABLET */
 @media screen and (max-width: 768px) {
-  .categ__menu ul {
-    font-size: 15px; }
   .categ__txtTitulo {
     font-size: 25px; }
-  .categ__img {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around; }
-    .categ__img img {
-      width: 200px;
-      height: 200px;
-      margin: 10px; }
-  .contenedor {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
   .colorbox {
     padding: 8px; }
   .txt1 {
@@ -26,19 +12,12 @@
   .txt3 {
     font-size: 13px; }
   .btn {
-    size-adjust: 50%; }
-  .navbar-toggler {
-    position: relative;
-    top: -3em;
-    left: 0em;
-    margin-bottom: -2em; } }
+    size-adjust: 50%; } }
 
 /* MOBILE */
 @media screen and (max-width: 500px) {
   .header__title {
     font-size: 17px; }
-  .footer {
-    font-size: 8px; }
   form {
     width: 300px;
     padding: 0.2rem; }
@@ -71,31 +50,14 @@ body {
   background-color: #F2EEE5;
   width: 100%; }
 
-div {
-  margin: 10px; }
-
 li {
   list-style-type: none;
-  text-align: center; }
-
-/* -- clases para lineas en particular --  */
-.imgCentered {
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%; }
-
-.txtcentrado {
-  text-align: center;
-  margin-top: 18px;
-  font-family: "Adamina-Regular.ttf"; }
+  padding: 0cm; }
 
 /*! ESTILOS PARA BLOQUES GENERALES */
 .header__menu ul {
   display: flex;
   justify-content: end;
-  padding: 0.5rem 4rem 0.5rem 0.5rem;
   color: #486261; }
 
 .footer {
@@ -109,12 +71,28 @@ li {
     margin-bottom: 1%;
     font-family: "Adamina-Regular.ttf";
     color: #546157; }
+    .footer section:hover, .footer h4:hover, .footer h5:hover {
+      transform: scale(1.02, 1.02);
+      filter: drop-shadow(0 0 0.3rem #546157); }
+  .footer h6 {
+    font-size: 12px;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0%;
+    font-family: "Adamina-Regular.ttf";
+    color: grey; }
   .footer img {
     border-radius: 50%;
     width: 40px;
     height: 40px; }
     .footer img:hover {
       transform: scale(1.05, 1.05); }
+
+.row {
+  margin: 0.5rem; }
 
 .navbar {
   --bs-navbar-brand-padding-y: 0rem; }
@@ -149,7 +127,6 @@ li {
   margin-bottom: 3%;
   transform: scale(1.1, 1); }
   .hero img:hover {
-    transform: scale(1.014, 1.014);
     filter: drop-shadow(0 0 0.6rem #bbb4a9);
     transition: all .5s; }
 
@@ -170,23 +147,28 @@ li {
   --bs-btn-disabled-border-color: #bbb4a9; }
 
 /* CARDS */
-.card-body {
-  padding: 0px;
-  color: #546157; }
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  padding-right: 0;
+  padding-left: 0; }
 
-.card {
-  --bs-card-bg: #FEFBF6;
-  text-align: center;
-  --bs-card-title-spacer-y: 0rem; }
-  .card img {
+.card-index {
+  text-align: center; }
+  .card-index .card {
+    --bs-card-border-color: transparent;
+    margin-bottom: 1rem;
+    margin: 1rem; }
+  .card-index img {
     margin-top: 0.5rem; }
-  .card p {
+  .card-index p {
     font-size: 0.9rem;
     font-style: italic; }
-  .card a:hover {
+  .card-index a:hover {
     transform: scale(1.007, 1.007);
     filter: drop-shadow(0 0 0.3rem #E4DCCF);
     transition: all .1s;
+    color: #546157; }
+  .card-index .card-body {
+    padding: 0px;
     color: #546157; }
 
 /*! ESTILOS CATEGORIAS*/
@@ -200,15 +182,26 @@ li {
   margin-top: 50px;
   margin-bottom: 50px; }
 
-.categ__img {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .categ__img img {
-    width: 250px;
-    height: 250px;
-    margin: 10px; }
+/* CARDS */
+.card-body {
+  padding: 0px;
+  color: #546157; }
+
+.categorias .card {
+  --bs-card-bg: transparent;
+  --bs-card-border-color: transparent;
+  text-align: center;
+  --bs-card-title-spacer-y: 0rem; }
+  .categorias .card h5 {
+    font-size: 1rem;
+    margin-top: 0.5rem; }
+  .categorias .card p {
+    font-size: 0.8rem;
+    font-style: italic; }
+  .categorias .card a:hover {
+    transform: scale(1.007, 1.007);
+    transition: all .1s;
+    color: #546157; }
 
 /*! ESTILOS TIENDA */
 .colorbox {

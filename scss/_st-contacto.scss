@@ -1,0 +1,33 @@
+@import "media";
+@import "variables";
+
+/*! ESTILOS CONTACTO */
+
+form{
+    margin: auto;
+    width: 400px;
+    padding: 1rem;
+    color-scheme: $darkgreen;
+    border-radius: 1rem;
+}
+.form-style{
+    h3{
+        padding-bottom: 20px;
+        text-align: center;
+        color: $maingreen;
+    }
+    legend{
+        font-size: 17px;
+    }
+    label{
+        font-size: 15px;
+    }
+}
+input{
+    border-spacing: 2px;
+    font-family: 'Inconsolata', monospace;
+}
+textarea{
+    vertical-align: top;
+    font-family: 'Inconsolata', monospace;
+}

@@ -2,27 +2,9 @@
 /* TABLET */
 @media  screen and (max-width: 768px) {
 
-    .categ__menu ul{
-        font-size: 15px;
-    }
     .categ__txtTitulo{
         font-size: 25px;
     }
-    .categ__img{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        img{
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-        }
-    }
-    .contenedor{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap ;
-    } 
     .colorbox{
         padding: 8px;
     }
@@ -38,21 +20,11 @@
     .btn{
         size-adjust: 50%;
     }
-    // ! NO FUNCIONA
-    .navbar-toggler {
-        position: relative;
-        top: -3em;
-        left: 0em;
-        margin-bottom: -2em;
-    }
 }
 /* MOBILE */
 @media  screen and (max-width: 500px) {
     .header__title{
         font-size: 17px;
-    }
-    .footer{
-        font-size: 8px;
     }
     form{
         width: 300px;
@@ -66,6 +38,7 @@
         }
         legend{
             font-size: 13px;
+            font-family: $mainFont;
         }
     } 
     .hist p{

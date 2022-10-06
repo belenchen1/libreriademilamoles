@@ -1,0 +1,56 @@
+@import "media";
+@import "variables";
+
+/*! ESTILOS INDEX */
+
+.hero{
+    img{
+    position: relative;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+    transform: scale(1.1, 1);
+    &:hover{
+        filter: drop-shadow(0 0 0.60rem $mainbeige);
+        transition: all .5s;
+    }
+    }
+}
+.btn{
+    font-family: $mainFont;
+    border-radius: 20%;
+    margin-top: 1rem;
+    p{
+        margin: 1rem;
+    }
+}
+
+/* CARDS */
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-right: 0;
+    padding-left: 0;
+}
+.card-index{
+    text-align: center;
+    .card{
+        --bs-card-border-color: transparent;
+        margin-bottom: 1rem;
+        margin: 1rem;
+    }
+    img{
+        margin-top: 0.5rem;
+    }
+    p{
+        font-size: 0.9rem;
+        font-style: italic;
+    }
+    a:hover{
+        transform: scale(1.007, 1.007);
+        filter: drop-shadow(0 0 0.30rem #E4DCCF);
+        transition: all .1s;
+        color:$maingreen;
+    }
+    .card-body {
+        padding: 0px;
+        color: $maingreen;
+    }
+}

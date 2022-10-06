@@ -1,0 +1,92 @@
+@import "media";
+@import "variables";
+
+/*! ESTILOS GENERALES Y UNIVERSALES */
+
+/* -- clases para etiquetas -- */
+
+a{
+    text-decoration: none;
+    font-family: $mainFont;
+    color: $darkgreen;
+}
+
+body{
+    background-color: #F2EEE5;
+    width: 100%;
+}
+
+li{
+    list-style-type: none;
+    padding: 0cm;
+    
+    display: flex;
+    justify-content: center;
+}
+
+/*! ESTILOS PARA BLOQUES GENERALES */
+
+.header__menu ul{
+    display: flex;
+    color: $darkergreen;
+}
+.footer{
+    background-color: #F5F4EF;
+    section, h4, h5{
+        font-size: 14px;
+        @include flex-row-center;
+        margin-bottom: 1%;
+        font-family: $mainFont;
+        color: $maingreen;
+        &:hover{
+            transform: scale(1.02, 1.02);
+            filter: drop-shadow(0 0 0.30rem #546157);
+        }
+    }
+    h6{
+        font-size: 12px;
+        font-style: italic;
+        @include flex-row-center;
+        margin-bottom: 0%;
+        font-family: $mainFont;
+        color: grey;
+    }
+    img{
+        border-radius: 50%;
+        @include sizes(40px, 40px);
+        &:hover{
+            transform: scale(1.05, 1.05);
+        }
+    }
+}
+.row {
+    margin: 0.5rem;
+}
+
+.navbar{
+    --bs-navbar-brand-padding-y: 0rem;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color:$maingreen;
+    font-weight: bold;
+}
+.navbar-brand :hover{
+    transform: scale(1.009,1.009);
+}
+.navbar-nav :hover{
+    --bs-nav-link-hover-color: #95ada0;
+}
+.bg-light {
+    --bs-bg-opacity: 0.5;
+}
+
+.navbar-toggler {
+    position: relative;
+    top: -3em;
+    left: -1em;
+    margin-bottom: -2em;
+    background-color: transparent;
+    border: transparent;
+    display: flex;
+    justify-content: end;
+}
