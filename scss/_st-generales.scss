@@ -4,40 +4,48 @@
 /*! ESTILOS GENERALES Y UNIVERSALES */
 
 /* -- clases para etiquetas -- */
-
 a{
     text-decoration: none;
-    font-family: $mainFont;
-    color: $darkgreen;
+    font-family: map-get($estilos, fuente);
+    color: map-get($colores, verde);
 }
-
 body{
     background-color: #F2EEE5;
     width: 100%;
 }
-
 li{
     list-style-type: none;
     padding: 0cm;
-    
     display: flex;
     justify-content: center;
 }
+ul {
+    padding-left: 0rem;
+}
 
 /*! ESTILOS PARA BLOQUES GENERALES */
-
+.seo{
+    h1{
+        font-size:1em;
+        margin-top: 1em;
+        font-family: map-get($estilos, fuente);
+        color: map-get($colores, verde);
+        text-align: map-get($estilos, alineacion);
+        letter-spacing: 0.1em;
+    }
+}
 .header__menu ul{
     display: flex;
-    color: $darkergreen;
+    color: map-get($colores, verdeOscuro);
 }
-.footer{
+footer{
     background-color: #F5F4EF;
-    section, h4, h5{
+    section, h5, h4{
         font-size: 14px;
         @include flex-row-center;
         margin-bottom: 1%;
-        font-family: $mainFont;
-        color: $maingreen;
+        font-family: map-get($estilos, fuente);
+        color: map-get($colores, verdePcpal);
         &:hover{
             transform: scale(1.02, 1.02);
             filter: drop-shadow(0 0 0.30rem #546157);
@@ -48,7 +56,7 @@ li{
         font-style: italic;
         @include flex-row-center;
         margin-bottom: 0%;
-        font-family: $mainFont;
+        font-family: map-get($estilos, fuente);
         color: grey;
     }
     img{
@@ -67,7 +75,7 @@ li{
     --bs-navbar-brand-padding-y: 0rem;
 }
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-    color:$maingreen;
+    color:map-get($colores, verdePcpal);
     font-weight: bold;
 }
 .navbar-brand :hover{

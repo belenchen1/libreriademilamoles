@@ -6,17 +6,15 @@
 .hero{
     img{
     position: relative;
-    margin-top: 1.5%;
-    margin-bottom: 3%;
     transform: scale(1.1, 1);
     &:hover{
-        filter: drop-shadow(0 0 0.60rem $mainbeige);
+        filter: drop-shadow(0 0 0.60rem map-get($colores, mainBeige));
         transition: all .5s;
     }
     }
 }
 .btn{
-    font-family: $mainFont;
+    font-family: map-get($estilos, fuente);
     border-radius: 20%;
     margin-top: 1rem;
     p{
@@ -47,10 +45,10 @@
         transform: scale(1.007, 1.007);
         filter: drop-shadow(0 0 0.30rem #E4DCCF);
         transition: all .1s;
-        color:$maingreen;
+        color:map-get($colores, verdePcpal);
     }
     .card-body {
         padding: 0px;
-        color: $maingreen;
+        color: map-get($colores, verdePcpal);
     }
 }

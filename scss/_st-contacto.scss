@@ -7,14 +7,14 @@ form{
     margin: auto;
     width: 400px;
     padding: 1rem;
-    color-scheme: $darkgreen;
+    color-scheme: map-get($colores, verde);
     border-radius: 1rem;
 }
 .form-style{
     h3{
         padding-bottom: 20px;
         text-align: center;
-        color: $maingreen;
+        color: map-get($colores, verdePcpal);
     }
     legend{
         font-size: 17px;

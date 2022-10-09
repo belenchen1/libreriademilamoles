@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 /* ! RESPONSIVE */
 /* TABLET */
 @media screen and (max-width: 768px) {
@@ -26,18 +31,61 @@
     padding-bottom: 15px;
     text-align: center; }
   .form-style legend {
-    font-size: 13px; }
+    font-size: 13px;
+    font-family: "Adamina-Regular.ttf"; }
   .hist p {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .categorias .card {
+    margin: 0.2em; }
+    .categorias .card img {
+      width: 11rem;
+      height: 11rem; } }
 
 @media screen and (max-width: 1000px) {
   .hist {
     font-size: 10px; } }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+/* ! RESPONSIVE */
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .categ__txtTitulo {
+    font-size: 25px; }
+  .colorbox {
+    padding: 8px; }
+  .txt1 {
+    font-size: 17px; }
+  .txt2 {
+    font-size: 13px; }
+  .txt3 {
+    font-size: 13px; }
+  .btn {
+    size-adjust: 50%; } }
+
+/* MOBILE */
+@media screen and (max-width: 500px) {
+  .header__title {
+    font-size: 17px; }
+  form {
+    width: 300px;
+    padding: 0.2rem; }
+  .form-style h3 {
+    font-size: 15px;
+    padding-bottom: 15px;
+    text-align: center; }
+  .form-style legend {
+    font-size: 13px;
+    font-family: "Adamina-Regular.ttf"; }
+  .hist p {
+    font-size: 10px; }
+  .categorias .card {
+    margin: 0.2em; }
+    .categorias .card img {
+      width: 11rem;
+      height: 11rem; } }
+
+@media screen and (max-width: 1000px) {
+  .hist {
+    font-size: 10px; } }
 
 /*! ESTILOS GENERALES Y UNIVERSALES */
 /* -- clases para etiquetas -- */
@@ -52,17 +100,29 @@ body {
 
 li {
   list-style-type: none;
-  padding: 0cm; }
+  padding: 0cm;
+  display: flex;
+  justify-content: center; }
+
+ul {
+  padding-left: 0rem; }
 
 /*! ESTILOS PARA BLOQUES GENERALES */
+.seo h1 {
+  font-size: 1em;
+  margin-top: 1em;
+  font-family: "Adamina-Regular.ttf";
+  color: #576F72;
+  text-align: center;
+  letter-spacing: 0.1em; }
+
 .header__menu ul {
   display: flex;
-  justify-content: end;
   color: #486261; }
 
-.footer {
+footer {
   background-color: #F5F4EF; }
-  .footer section, .footer h4, .footer h5 {
+  footer section, footer h5, footer h4 {
     font-size: 14px;
     display: flex;
     flex-direction: row;
@@ -71,10 +131,10 @@ li {
     margin-bottom: 1%;
     font-family: "Adamina-Regular.ttf";
     color: #546157; }
-    .footer section:hover, .footer h4:hover, .footer h5:hover {
+    footer section:hover, footer h5:hover, footer h4:hover {
       transform: scale(1.02, 1.02);
       filter: drop-shadow(0 0 0.3rem #546157); }
-  .footer h6 {
+  footer h6 {
     font-size: 12px;
     font-style: italic;
     display: flex;
@@ -84,11 +144,11 @@ li {
     margin-bottom: 0%;
     font-family: "Adamina-Regular.ttf";
     color: grey; }
-  .footer img {
+  footer img {
     border-radius: 50%;
     width: 40px;
     height: 40px; }
-    .footer img:hover {
+    footer img:hover {
       transform: scale(1.05, 1.05); }
 
 .row {
@@ -120,11 +180,51 @@ li {
   display: flex;
   justify-content: end; }
 
+/* ! RESPONSIVE */
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .categ__txtTitulo {
+    font-size: 25px; }
+  .colorbox {
+    padding: 8px; }
+  .txt1 {
+    font-size: 17px; }
+  .txt2 {
+    font-size: 13px; }
+  .txt3 {
+    font-size: 13px; }
+  .btn {
+    size-adjust: 50%; } }
+
+/* MOBILE */
+@media screen and (max-width: 500px) {
+  .header__title {
+    font-size: 17px; }
+  form {
+    width: 300px;
+    padding: 0.2rem; }
+  .form-style h3 {
+    font-size: 15px;
+    padding-bottom: 15px;
+    text-align: center; }
+  .form-style legend {
+    font-size: 13px;
+    font-family: "Adamina-Regular.ttf"; }
+  .hist p {
+    font-size: 10px; }
+  .categorias .card {
+    margin: 0.2em; }
+    .categorias .card img {
+      width: 11rem;
+      height: 11rem; } }
+
+@media screen and (max-width: 1000px) {
+  .hist {
+    font-size: 10px; } }
+
 /*! ESTILOS INDEX */
 .hero img {
   position: relative;
-  margin-top: 1.5%;
-  margin-bottom: 3%;
   transform: scale(1.1, 1); }
   .hero img:hover {
     filter: drop-shadow(0 0 0.6rem #bbb4a9);
@@ -136,15 +236,6 @@ li {
   margin-top: 1rem; }
   .btn p {
     margin: 1rem; }
-
-.btn-primary {
-  --bs-btn-bg: #bbb4a9;
-  --bs-btn-border-color: #bbb4a9;
-  --bs-btn-hover-bg: #546157;
-  --bs-btn-hover-border-color: #546157;
-  --bs-btn-active-bg: #546157;
-  --bs-btn-disabled-bg: #bbb4a9;
-  --bs-btn-disabled-border-color: #bbb4a9; }
 
 /* CARDS */
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -171,6 +262,48 @@ li {
     padding: 0px;
     color: #546157; }
 
+/* ! RESPONSIVE */
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .categ__txtTitulo {
+    font-size: 25px; }
+  .colorbox {
+    padding: 8px; }
+  .txt1 {
+    font-size: 17px; }
+  .txt2 {
+    font-size: 13px; }
+  .txt3 {
+    font-size: 13px; }
+  .btn {
+    size-adjust: 50%; } }
+
+/* MOBILE */
+@media screen and (max-width: 500px) {
+  .header__title {
+    font-size: 17px; }
+  form {
+    width: 300px;
+    padding: 0.2rem; }
+  .form-style h3 {
+    font-size: 15px;
+    padding-bottom: 15px;
+    text-align: center; }
+  .form-style legend {
+    font-size: 13px;
+    font-family: "Adamina-Regular.ttf"; }
+  .hist p {
+    font-size: 10px; }
+  .categorias .card {
+    margin: 0.2em; }
+    .categorias .card img {
+      width: 11rem;
+      height: 11rem; } }
+
+@media screen and (max-width: 1000px) {
+  .hist {
+    font-size: 10px; } }
+
 /*! ESTILOS CATEGORIAS*/
 .categ__txtTitulo {
   font-size: 30px;
@@ -178,9 +311,16 @@ li {
   font-family: 'Aboreto', cursive;
   text-decoration: overline;
   text-align: center;
-  color: #6D8B74;
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  color: #576F72;
+  margin-top: 1.3rem;
+  margin-bottom: 0.9rem; }
+
+.menu-categ {
+  color: #546157; }
+  .menu-categ h3 {
+    font-family: "Adamina-Regular.ttf"; }
+  .menu-categ a:hover {
+    text-decoration: underline; }
 
 /* CARDS */
 .card-body {
@@ -188,10 +328,15 @@ li {
   color: #546157; }
 
 .categorias .card {
+  margin: 1em;
   --bs-card-bg: transparent;
   --bs-card-border-color: transparent;
   text-align: center;
-  --bs-card-title-spacer-y: 0rem; }
+  --bs-card-title-spacer-y: 0rem;
+  display: block; }
+  .categorias .card img {
+    width: 13rem;
+    height: 13rem; }
   .categorias .card h5 {
     font-size: 1rem;
     margin-top: 0.5rem; }
@@ -202,6 +347,117 @@ li {
     transform: scale(1.007, 1.007);
     transition: all .1s;
     color: #546157; }
+
+/* ! RESPONSIVE */
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .categ__txtTitulo {
+    font-size: 25px; }
+  .colorbox {
+    padding: 8px; }
+  .txt1 {
+    font-size: 17px; }
+  .txt2 {
+    font-size: 13px; }
+  .txt3 {
+    font-size: 13px; }
+  .btn {
+    size-adjust: 50%; } }
+
+/* MOBILE */
+@media screen and (max-width: 500px) {
+  .header__title {
+    font-size: 17px; }
+  form {
+    width: 300px;
+    padding: 0.2rem; }
+  .form-style h3 {
+    font-size: 15px;
+    padding-bottom: 15px;
+    text-align: center; }
+  .form-style legend {
+    font-size: 13px;
+    font-family: "Adamina-Regular.ttf"; }
+  .hist p {
+    font-size: 10px; }
+  .categorias .card {
+    margin: 0.2em; }
+    .categorias .card img {
+      width: 11rem;
+      height: 11rem; } }
+
+@media screen and (max-width: 1000px) {
+  .hist {
+    font-size: 10px; } }
+
+/*! ESTILOS CONTACTO */
+form {
+  margin: auto;
+  width: 400px;
+  padding: 1rem;
+  color-scheme: #576F72;
+  border-radius: 1rem; }
+
+.form-style h3 {
+  padding-bottom: 20px;
+  text-align: center;
+  color: #546157; }
+
+.form-style legend {
+  font-size: 17px; }
+
+.form-style label {
+  font-size: 15px; }
+
+input {
+  border-spacing: 2px;
+  font-family: 'Inconsolata', monospace; }
+
+textarea {
+  vertical-align: top;
+  font-family: 'Inconsolata', monospace; }
+
+/* ! RESPONSIVE */
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .categ__txtTitulo {
+    font-size: 25px; }
+  .colorbox {
+    padding: 8px; }
+  .txt1 {
+    font-size: 17px; }
+  .txt2 {
+    font-size: 13px; }
+  .txt3 {
+    font-size: 13px; }
+  .btn {
+    size-adjust: 50%; } }
+
+/* MOBILE */
+@media screen and (max-width: 500px) {
+  .header__title {
+    font-size: 17px; }
+  form {
+    width: 300px;
+    padding: 0.2rem; }
+  .form-style h3 {
+    font-size: 15px;
+    padding-bottom: 15px;
+    text-align: center; }
+  .form-style legend {
+    font-size: 13px;
+    font-family: "Adamina-Regular.ttf"; }
+  .hist p {
+    font-size: 10px; }
+  .categorias .card {
+    margin: 0.2em; }
+    .categorias .card img {
+      width: 11rem;
+      height: 11rem; } }
+
+@media screen and (max-width: 1000px) {
+  .hist {
+    font-size: 10px; } }
 
 /*! ESTILOS TIENDA */
 .colorbox {
@@ -232,30 +488,3 @@ li {
 .frente {
   width: 60%;
   height: 60%; }
-
-/*! ESTILOS CONTACTO */
-form {
-  margin: auto;
-  width: 400px;
-  padding: 1rem;
-  color-scheme: #576F72;
-  border-radius: 1rem; }
-
-.form-style h3 {
-  padding-bottom: 20px;
-  text-align: center;
-  color: #546157; }
-
-.form-style legend {
-  font-size: 17px; }
-
-.form-style label {
-  font-size: 15px; }
-
-input {
-  border-spacing: 2px;
-  font-family: 'Inconsolata', monospace; }
-
-textarea {
-  vertical-align: top;
-  font-family: 'Inconsolata', monospace; }

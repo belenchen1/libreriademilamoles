@@ -1,3 +1,5 @@
+@import "variables";
+
 /* ! RESPONSIVE */
 /* TABLET */
 @media  screen and (max-width: 768px) {
@@ -38,11 +40,19 @@
         }
         legend{
             font-size: 13px;
-            font-family: $mainFont;
+            font-family: map-get($estilos, fuente);
         }
     } 
     .hist p{
         font-size: 10px;    
+    }
+    .categorias{
+        .card{
+            margin: 0.2em;
+            img{
+                @include sizes(11rem, 11rem);
+            }
+        }
     }
 }
 

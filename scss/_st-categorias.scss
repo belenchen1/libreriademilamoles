@@ -9,21 +9,35 @@
     font-family: 'Aboreto', cursive;
     text-decoration: overline;
     text-align: center;
-    color: #6D8B74;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    color:  map-get($colores, verde);;
+    margin-top: 1.3rem;
+    margin-bottom: 0.9rem;
+}
+.menu-categ{
+    color: map-get($colores, verdePcpal);
+    h3{
+        font-family: map-get($estilos, fuente);
+    }
+    a:hover{
+        text-decoration: underline;
+    }
 }
 /* CARDS */
 .card-body {
     padding: 0px;
-    color: $maingreen;
+    color: map-get($colores, verdePcpal);
 }
 .categorias{
     .card{
+        margin: 1em;
         --bs-card-bg: transparent;
         --bs-card-border-color: transparent;
         text-align: center;
         --bs-card-title-spacer-y: 0rem;
+        display: block;
+        img{
+            @include sizes(13rem, 13rem);
+        }
         h5{
             font-size: 1rem;
             margin-top: 0.5rem;
@@ -35,7 +49,7 @@
         a:hover{
             transform: scale(1.007, 1.007);
             transition: all .1s;
-            color:$maingreen;
+            color: map-get($colores, verdePcpal);
         }
     }
 }

@@ -1,23 +1,27 @@
-$darkgreen: #576F72;
-$darkergreen: #486261;
-$maingreen: #546157;
-$mainbeige: #bbb4a9;
-$mainFont: "Adamina-Regular.ttf";
-
 @mixin sizes($w, $h){
     width: $w;
     height: $h;
 }
-
 @mixin flex-row-center{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 @mixin flex($d, $fd, $w){
     display: $d;
     flex-direction: $fd;
     flex-wrap: $w;
 }
+$estilos:(
+    alineacion: center,
+    fuente: "Adamina-Regular.ttf",
+    padding: 1rem
+);
+$colores:(
+    verde: #576F72,
+    verdeOscuro: #486261,
+    verdePcpal: #546157,
+    mainBeige: #bbb4a9,
+    lighterBeige: #efedea
+);
