@@ -25,6 +25,9 @@
 }
 /* MOBILE */
 @media  screen and (max-width: 500px) {
+    .categ__txtTitulo{
+        font-family: map-get($colores, fuente);
+    }
     .header__title{
         font-size: 17px;
     }
@@ -53,6 +56,9 @@
                 @include sizes(11rem, 11rem);
             }
         }
+    }
+    .txt1{
+        font-size: 13px;
     }
 }
 

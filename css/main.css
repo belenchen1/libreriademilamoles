@@ -39,7 +39,9 @@
     margin: 0.2em; }
     .categorias .card img {
       width: 11rem;
-      height: 11rem; } }
+      height: 11rem; }
+  .txt1 {
+    font-size: 13px; } }
 
 @media screen and (max-width: 1000px) {
   .hist {
@@ -81,7 +83,9 @@
     margin: 0.2em; }
     .categorias .card img {
       width: 11rem;
-      height: 11rem; } }
+      height: 11rem; }
+  .txt1 {
+    font-size: 13px; } }
 
 @media screen and (max-width: 1000px) {
   .hist {
@@ -121,7 +125,10 @@ ul {
   color: #486261; }
 
 footer {
+  margin: 1%;
   background-color: #F5F4EF; }
+  footer hr {
+    margin: 0.4rem; }
   footer section, footer h5, footer h4 {
     font-size: 14px;
     display: flex;
@@ -131,9 +138,8 @@ footer {
     margin-bottom: 1%;
     font-family: "Adamina-Regular.ttf";
     color: #546157; }
-    footer section:hover, footer h5:hover, footer h4:hover {
-      transform: scale(1.02, 1.02);
-      filter: drop-shadow(0 0 0.3rem #546157); }
+  footer div {
+    margin: 0%; }
   footer h6 {
     font-size: 12px;
     font-style: italic;
@@ -141,7 +147,6 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 0%;
     font-family: "Adamina-Regular.ttf";
     color: grey; }
   footer img {
@@ -149,7 +154,8 @@ footer {
     width: 40px;
     height: 40px; }
     footer img:hover {
-      transform: scale(1.05, 1.05); }
+      transform: scale(1.02, 1.02);
+      filter: drop-shadow(0 0 0.1rem #bbb4a9); }
 
 .row {
   margin: 0.5rem; }
@@ -216,19 +222,18 @@ footer {
     margin: 0.2em; }
     .categorias .card img {
       width: 11rem;
-      height: 11rem; } }
+      height: 11rem; }
+  .txt1 {
+    font-size: 13px; } }
 
 @media screen and (max-width: 1000px) {
   .hist {
     font-size: 10px; } }
 
 /*! ESTILOS INDEX */
-.hero img {
-  position: relative;
-  transform: scale(1.1, 1); }
-  .hero img:hover {
-    filter: drop-shadow(0 0 0.6rem #bbb4a9);
-    transition: all .5s; }
+.hero img:hover {
+  filter: drop-shadow(0 0 0.6rem #bbb4a9);
+  transition: all .5s; }
 
 .btn {
   font-family: "Adamina-Regular.ttf";
@@ -248,6 +253,8 @@ footer {
     --bs-card-border-color: transparent;
     margin-bottom: 1rem;
     margin: 1rem; }
+  .card-index .card-title {
+    margin: var(--bs-card-title-spacer-y); }
   .card-index img {
     margin-top: 0.5rem; }
   .card-index p {
@@ -298,7 +305,9 @@ footer {
     margin: 0.2em; }
     .categorias .card img {
       width: 11rem;
-      height: 11rem; } }
+      height: 11rem; }
+  .txt1 {
+    font-size: 13px; } }
 
 @media screen and (max-width: 1000px) {
   .hist {
@@ -320,7 +329,8 @@ footer {
   .menu-categ h3 {
     font-family: "Adamina-Regular.ttf"; }
   .menu-categ a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #576F72; }
 
 /* CARDS */
 .card-body {
@@ -336,7 +346,8 @@ footer {
   display: block; }
   .categorias .card img {
     width: 13rem;
-    height: 13rem; }
+    height: 13rem;
+    border-radius: 20%; }
   .categorias .card h5 {
     font-size: 1rem;
     margin-top: 0.5rem; }
@@ -384,7 +395,9 @@ footer {
     margin: 0.2em; }
     .categorias .card img {
       width: 11rem;
-      height: 11rem; } }
+      height: 11rem; }
+  .txt1 {
+    font-size: 13px; } }
 
 @media screen and (max-width: 1000px) {
   .hist {
@@ -393,27 +406,36 @@ footer {
 /*! ESTILOS CONTACTO */
 form {
   margin: auto;
-  width: 400px;
-  padding: 1rem;
   color-scheme: #576F72;
-  border-radius: 1rem; }
+  display: block;
+  text-align: center; }
 
 .form-style h3 {
-  padding-bottom: 20px;
+  padding-bottom: 15  px;
+  font-size: 1.4rem;
   text-align: center;
-  color: #546157; }
+  color: #546157;
+  font-family: "Adamina-Regular.ttf";
+  letter-spacing: 0.1em; }
 
 .form-style legend {
-  font-size: 17px; }
+  font-size: 1rem;
+  font-family: "Adamina-Regular.ttf";
+  margin-bottom: 0cm; }
 
 .form-style label {
-  font-size: 15px; }
+  font-size: 0.8rem;
+  color: #576F72; }
 
 input {
-  border-spacing: 2px;
-  font-family: 'Inconsolata', monospace; }
+  font-size: 0.8rem;
+  font-family: 'Inconsolata', monospace;
+  width: auto;
+  margin: 0.7em; }
 
 textarea {
+  margin: 0.7em;
+  font-size: 0.8rem;
   vertical-align: top;
   font-family: 'Inconsolata', monospace; }
 
@@ -453,7 +475,9 @@ textarea {
     margin: 0.2em; }
     .categorias .card img {
       width: 11rem;
-      height: 11rem; } }
+      height: 11rem; }
+  .txt1 {
+    font-size: 13px; } }
 
 @media screen and (max-width: 1000px) {
   .hist {
@@ -471,12 +495,12 @@ textarea {
   font-weight: bold;
   padding-bottom: 1rem; }
 
-.txt2 {
+.dias {
   font-size: 15px;
   font-weight: normal;
   text-decoration: underline; }
 
-.txt3 {
+.horarios {
   font-size: 15px;
   font-weight: normal;
   padding-top: 10px;

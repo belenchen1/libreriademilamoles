@@ -4,13 +4,9 @@
 /*! ESTILOS INDEX */
 
 .hero{
-    img{
-    position: relative;
-    transform: scale(1.1, 1);
-    &:hover{
+    img:hover{
         filter: drop-shadow(0 0 0.60rem map-get($colores, mainBeige));
         transition: all .5s;
-    }
     }
 }
 .btn{
@@ -33,6 +29,9 @@
         --bs-card-border-color: transparent;
         margin-bottom: 1rem;
         margin: 1rem;
+    }
+    .card-title{
+        margin: var(--bs-card-title-spacer-y);
     }
     img{
         margin-top: 0.5rem;

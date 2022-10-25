@@ -39,23 +39,25 @@ ul {
     color: map-get($colores, verdeOscuro);
 }
 footer{
+    margin: 1%;
     background-color: #F5F4EF;
+    hr{
+        margin: 0.4rem;
+    }
     section, h5, h4{
         font-size: 14px;
         @include flex-row-center;
         margin-bottom: 1%;
         font-family: map-get($estilos, fuente);
         color: map-get($colores, verdePcpal);
-        &:hover{
-            transform: scale(1.02, 1.02);
-            filter: drop-shadow(0 0 0.30rem #546157);
         }
+    div{
+        margin: 0%;
     }
     h6{
         font-size: 12px;
         font-style: italic;
         @include flex-row-center;
-        margin-bottom: 0%;
         font-family: map-get($estilos, fuente);
         color: grey;
     }
@@ -63,8 +65,9 @@ footer{
         border-radius: 50%;
         @include sizes(40px, 40px);
         &:hover{
-            transform: scale(1.05, 1.05);
-        }
+            transform: scale(1.02, 1.02);
+            filter: drop-shadow(0 0 0.10rem map-get($colores, mainBeige));    
+    }
     }
 }
 .row {

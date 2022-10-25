@@ -5,29 +5,38 @@
 
 form{
     margin: auto;
-    width: 400px;
-    padding: 1rem;
     color-scheme: map-get($colores, verde);
-    border-radius: 1rem;
+    display: block;
+    text-align: center;
 }
 .form-style{
     h3{
-        padding-bottom: 20px;
+        padding-bottom: 15  px;
+        font-size: 1.4rem;
         text-align: center;
         color: map-get($colores, verdePcpal);
+        font-family: map-get($estilos, fuente);
+        letter-spacing: 0.1em;
     }
     legend{
-        font-size: 17px;
+        font-size: 1rem;
+        font-family: map-get($estilos, fuente);
+        margin-bottom: 0cm;
     }
     label{
-        font-size: 15px;
-    }
+        font-size: 0.8rem;
+        color: map-get($colores, verde);
+    }    
 }
 input{
-    border-spacing: 2px;
+    font-size: 0.8rem;
     font-family: 'Inconsolata', monospace;
+    width: auto;
+    margin: 0.7em;
 }
 textarea{
+    margin: 0.7em;
+    font-size: 0.8rem;
     vertical-align: top;
     font-family: 'Inconsolata', monospace;
 }
