@@ -1,0 +1,14 @@
+.cart{
+   width: 1.4em;
+   position: absolute;
+   top: 17vh;
+   right: 15vh;
+}
+
+.itemsInCart{
+   width: 1.4em;
+   position: absolute;
+   top: 18.2vh;
+   right: 15.4vh;
+   font-size: small;
+}
